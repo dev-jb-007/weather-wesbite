@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Using / in link  will bring you to root static folder-->
+    <!--similarly we can add images and javascript just like these but all the files  must be present in static folder-->
+</head>
+
+<body>
+    <div>{{>header}}</div>
+    <div class="weather_display">
+        <h1>Weather</h1>
+        <img src="/images/weather.jpg">
+        <form>
+            <input type="text" name="" id="search" placeholder="Location">
+            <div id="display_area">
+            </div>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="/javasciript/index.js"></script>
+
+</html>
