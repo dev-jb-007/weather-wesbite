@@ -129,6 +129,9 @@ footer{
     height:70px;
     margin:10px auto;
     text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 footer p{
     font-size:1rem;
@@ -145,12 +148,16 @@ footer p{
         width: 375px;
         list-style:none;
     }
+    nav{
+        position: relative;
+        left:-10px;
+    }
     nav:after{
         content:'';
-        width: 500px;
+        width: 600px;
         height:3px;
         position:absolute;
-        left:-60px;
+        left:-90px;
         bottom:-20px;
         background-color:grey;
         border-radius: 2px;
