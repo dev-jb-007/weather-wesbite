@@ -54,8 +54,8 @@ nav:after{
     content:'';
     width: 75%;
     height:3px;
-    left:50px;
     position:absolute;
+    left:200px;
     bottom:-20px;
     background-color:grey;
     border-radius: 2px;
@@ -128,4 +128,15 @@ nav:after{
         width: 375px;
         list-style:none;
     }
+    nav:after{
+        content:'';
+        width: 500px;
+        height:3px;
+        position:absolute;
+        left:-60px;
+        bottom:-20px;
+        background-color:grey;
+        border-radius: 2px;
+    }
+    
 }
