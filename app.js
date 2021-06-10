@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast.js');
 
 //Setting the express application
 const app= express();
+const port=process.env.PORT || 3000;
 
 //Setting the paths
 const staticPath=path.join(__dirname,'/static');
@@ -60,15 +61,14 @@ app.get('',(req,res)=>{
     });
 });
 
-//Handling the 404 page
-// app.get('*', (req, res) => {
-//     res.send({
-//         status:404,
-//         error:'Check Your URL'
-//     })
-// });
+app.get('*', (req, res) => {
+    res.send({
+        status:404,
+        error:'Check Your URL'
+    })
+});
 
 //Starting the server
-app.listen(3000,()=>{
-    console.log("Your server has been started");
+app.listen(port,()=>{
+    console.log(`Your server has been started on ${port}`);
 })

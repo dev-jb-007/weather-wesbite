@@ -4,7 +4,7 @@ let image=document.querySelector('img');
 document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
     let text = document.getElementById('search').value;
-    fetch('http://localhost:3000/?address=' + text).then(response => response.json()).then(data => {
+    fetch('/?address=' + text).then(response => response.json()).then(data => {
         if (data.error) {
             document.querySelector('#display_area').innerHTML = `<p>${data.error}<p>`
         }
