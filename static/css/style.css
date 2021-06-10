@@ -65,7 +65,7 @@ nav:after{
 .weather_display{
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     width:600px;
     height:800px;
@@ -86,10 +86,8 @@ nav:after{
 .weather_display form{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 60%;
-    height:500px;
     
 }
 .weather_display input{
@@ -111,6 +109,11 @@ nav:after{
     color:white;
     background-color:grey;
     cursor: pointer;
+    transition: 0.4s;
+    margin-top: 30px;
+}
+#display_area{
+    margin-top:30px;
 }
 #display_area p{
     text-align: center;
